@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C3BBDEF4-12A1-431E-B9D6-BDBA6D8DF5F2}</ProjectGuid>
+    <RootNamespace>Assignment5</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>Assignment5Source</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicCanvas.h" />
+    <ClInclude Include="BasicCanvasBitmapIterator.h" />
+    <ClInclude Include="binary_ostream_iterator.h" />
+    <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="BitmapDecorator.h" />
+    <ClInclude Include="BitmapIterator.h" />
+    <ClInclude Include="BrightnessDecorator.h" />
+    <ClInclude Include="CodecInterfaces.h" />
+    <ClInclude Include="CodecLibrary.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorInversionDecorator.h" />
+    <ClInclude Include="ColorSwapDecorator.h" />
+    <ClInclude Include="DrawingInterfaces.h" />
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="GrayscaleDecorator.h" />
+    <ClInclude Include="KeepColorDecorator.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="LineIterator.h" />
+    <ClInclude Include="Parse.h" />
+    <ClInclude Include="PlacedGraphic.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="RandomDecorator.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneReader.h" />
+    <ClInclude Include="SceneWriter.h" />
+    <ClInclude Include="SizedWord.h" />
+    <ClInclude Include="SlashPen.h" />
+    <ClInclude Include="SlashStroke.h" />
+    <ClInclude Include="SquarePen.h" />
+    <ClInclude Include="SquareStroke.h" />
+    <ClInclude Include="StrokeFactory.h" />
+    <ClInclude Include="VectorGraphic.h" />
+    <ClInclude Include="VectorGraphicStreamer.h" />
+    <ClInclude Include="VerifyEquality.h" />
+    <ClInclude Include="WindowsBitmapDecoder.h" />
+    <ClInclude Include="WindowsBitmapEncoder.h" />
+    <ClInclude Include="WindowsBitmapFileProjector.h" />
+    <ClInclude Include="WindowsBitmapHeader.h" />
+    <ClInclude Include="XmlFactories.h" />
+    <ClInclude Include="XmlInterfaces.h" />
+    <ClInclude Include="XmlReader.h" />
+    <ClInclude Include="XmlWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicCanvas.cpp" />
+    <ClCompile Include="BasicCanvasBitmapIterator.cpp" />
+    <ClCompile Include="Bitmap.cpp" />
+    <ClCompile Include="BitmapDecorator.cpp" />
+    <ClCompile Include="BitmapIterator.cpp" />
+    <ClCompile Include="BrightnessDecorator.cpp" />
+    <ClCompile Include="CodecLibrary.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorInversionDecorator.cpp" />
+    <ClCompile Include="ColorSwapDecorator.cpp" />
+    <ClCompile Include="Element.cpp" />
+    <ClCompile Include="GrayscaleDecorator.cpp" />
+    <ClCompile Include="KeepColorDecorator.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LineIterator.cpp" />
+    <ClCompile Include="Parse.cpp" />
+    <ClCompile Include="PlacedGraphic.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="RandomDecorator.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneReader.cpp" />
+    <ClCompile Include="SceneWriter.cpp" />
+    <ClCompile Include="SlashPen.cpp" />
+    <ClCompile Include="SlashStroke.cpp" />
+    <ClCompile Include="SquarePen.cpp" />
+    <ClCompile Include="SquareStroke.cpp" />
+    <ClCompile Include="StrokeFactory.cpp" />
+    <ClCompile Include="VectorGraphic.cpp" />
+    <ClCompile Include="VectorGraphicStreamer.cpp" />
+    <ClCompile Include="WindowsBitmapDecoder.cpp" />
+    <ClCompile Include="WindowsBitmapEncoder.cpp" />
+    <ClCompile Include="WindowsBitmapFileProjector.cpp" />
+    <ClCompile Include="WindowsBitmapHeader.cpp" />
+    <ClCompile Include="XmlFactories.cpp" />
+    <ClCompile Include="XmlReader.cpp" />
+    <ClCompile Include="XmlWriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tinyxml2-master\tinyxml2\tinyxml2.vcxproj">
+      <Project>{d1c528b6-aa02-4d29-9d61-dc08e317a70d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
